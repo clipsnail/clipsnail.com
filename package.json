@@ -1,0 +1,16 @@
+{
+  "name": "clipsnail.com",
+  "version": "0.0.0",
+  "description": "A clipping site.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stuartpb/clipsnail.com.git"
+  },
+  "author": "Stuart P. Bentley",
+  "dependencies": {
+    "node-static": "~0.6.9"
+  }
+}
