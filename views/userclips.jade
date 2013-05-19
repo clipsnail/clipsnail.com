@@ -1,7 +1,19 @@
 extends layout
 
+block head
+  style
+    .clip {
+      width: 220px;
+      margin: 10px;
+      float: left;
+      box-shadow: 1px 1px 5px 1px rgba(0,0,0,.25);
+    }
+
+    .clipframe {
+      border: 1px solid black;
+    }
 block content
   each clip in clips
     div.clip
-      iframe(sandbox, srcdoc=clip.html)
+      iframe(sandbox, srcdoc=clip.html).clipframe
       p.clipdescr= clip.desc
