@@ -5,6 +5,7 @@ function apiapp (db){
 
   var clips = db.collection('clips');
 
+  app.use(express.bodyParser());
   app.post('/clip', function(req,res,next) {
     var password = req.body.password;
     if(password == process.env.API_TEST_PASSWORD){
