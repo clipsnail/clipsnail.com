@@ -15,10 +15,12 @@ function apiapp (db){
       clips.insert({user: user, html: html, desc: desc}, {safe: true},
         function(err,doc) {
           if(err) return next(err);
-          res.send(200,'Inserted:\n\n'+JSON.stringify(doc));
+          res.set('Content-Type', 'text/plain')
+            .send(200,'Inserted:\n\n'+JSON.stringify(doc));
         });
     } else {
-      res.send(403,'If you want to insert a clip, you must speak the secret word');
+      res.set('Content-Type', 'text/plain').send(403,
+        'If you want to insert a clip, you must speak the secret word');
     }
   });
 
