@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  each clip in clips
+    div.clip
+      iframe(sandbox, srcdoc=clip.html)
+      p.clipdescr= clip.desc
