@@ -1,0 +1,21 @@
+extends layout
+
+block head
+  style
+    label { display: block; }
+
+block content
+  form
+    label
+      | description
+      textarea(name='desc')
+    label
+      | content
+      textarea(name='html')
+    label
+      | username
+      input(name='user')
+    label
+      | WHAT IS THE PASSWORD?
+      input(name='password')
+    input(type='submit')
