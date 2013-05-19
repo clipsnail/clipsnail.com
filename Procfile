@@ -1,1 +1,1 @@
-web: static -p $PORT www
+web: node server.js
