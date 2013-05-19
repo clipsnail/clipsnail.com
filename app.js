@@ -13,8 +13,9 @@ function apiapp (db){
       var html = req.body.html || '';
       var desc = req.body.desc || '';
       clips.insert({user: user, html: html, desc: desc}, {safe: true},
-        function(err) {
+        function(err,doc) {
           if(err) return next(err);
+          res.send(200,'Inserted:\n\n'+JSON.stringify(doc));
         });
     } else {
       res.send(403,'If you want to insert a clip, you must speak the secret word');
