@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with bare hands and raw skill. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19">
+  <path d="M 3,8
+    L 6,8    A 1.5,1.5 0 0 0 6,5
+    L 3,5    A 2.5,2.5 0 1 0 3,10
+    L 7.5,10 A 2.5,2.5 0 0 0 10,7.5
+    L 10,3   A 2.5,2.5 0 1 0 5,3
+    L 5,4    L 6,4
+    L 6,3    A 1.5,1.5 0 1 1 9,3
+    L 9,7.5  A 1.5,1.5 0 0 1 7.5,9
+    L 3,9    A 1.5,1.5 0 1 1 3,6
+    L 6,6    A 0.5,0.5 0 0 1 6,7
+    L 3,7    Z"
+    transform="scale(2) translate(-0.5,-0.5)" fill="#344"/>
+</svg>

@@ -13,9 +13,10 @@ block content
       | content
       textarea(name='html')
     label
-      | username
-      input(name='user')
+      | username: test~
+      input(name='user',required)
     label
       | WHAT IS THE PASSWORD?
-      input(name='password')
+      input(name='password',required)
+    input(type='hidden',name='source',value='testform')
     input(type='submit')

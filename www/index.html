@@ -4,26 +4,47 @@
     <meta charset="utf-8">
     <title>Clipsnail is Coming</title>
     <style>
-      html{
-        display: table;
+      html {
         height: 100%;
-        margin: 0 auto;
+        margin: 0;
         padding: 0;
       }
       body {
-        display: table-cell;
         height: 100%;
-        vertical-align: middle;
-        width: 800px;
-        text-align: center;
+        background-color: #fcfcfc;
+        margin: 0;
         padding: 0;
+      }
+      main {
+        background-color: #8a0;
+        position: absolute;
+        top: 72px;
+        left: 16px;
+        right: 0;
+        bottom: 0;
+        padding: 72px;
+      }
+      .twitter-timeline {
+        display: block;
+        margin: auto;
+      }
+      #headsnail {
+        position: absolute;
+        height: 152px;
+        width: 152px;
+        left: 8px;
+        top: 16px;
+        z-index: 1;
       }
     </style>
     <link rel="icon" href="icon.png">
     <meta name="google-site-verification" content="_xUVUac8bgOFdjVln_lC37eeQNiQ7ZHK-oyID2uzYA8" />
   </head>
   <body>
+    <img src="snail.svg" id="headsnail">
+    <main>
     <a class="twitter-timeline" href="https://twitter.com/clipsnail" data-widget-id="332649239362535426">Tweets by @clipsnail</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </main>
   </body>
 </html>
